@@ -1,0 +1,28 @@
+Thripshaw's Disease - An example with Bayes Rule
+
+The test has a 98% probability of giving a positive result when applied to a person suffering from Thripshaw's Disease
+10% probability of giving a (false) positive when applied to a non-sufferer
+Estimated that 0.5% are sufferers of Thripshaw's Disease
+
+For this exercise, we suppose that the test is administered to a person with an unknown disease status.  What are the probabilities for the following:
+
+1. Probability that the test will be positive
+P(A) = probability of getting a positive result
+P(B) = probability of actual sufferer of diseases
+
+P(Positive Test)*P(Infected) + P(non-suffering populuation)*P(non-suffering population minus 5% suffering population)
+P(.98)*P(.005) + P(.1)*P(1-.005)
+P(.98)*P(.005) + P(.1)*P(0.995)
+.0049 + .0995 = .1044
+
+2. What is the probability of correctly identifying a sufferer of Thripshaw's disease?
+.98 (The test has a 98% probability of giving a positive result when applied to a person suffering from Thirpshaw's Disease)
+
+3. What is the probability of correctly identifying a non-sufferer of Thripshaw's Disease?
+Take 100% (1) and minus the 10% probability of getting a (false) positive (.10)
+1 - .10 = .9
+
+4. What is the probability of misclassifying the person as a sufferer of Thripshaw's Disease?
+100% (1) - (positive test * sufferer + non-sufferering probability * non-suffering population minus the suffering population)
+1 - (.98 * .005 + .9 * .995) = 
+1 - (.9004) = 0.0996
